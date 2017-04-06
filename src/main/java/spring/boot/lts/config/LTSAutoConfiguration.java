@@ -52,6 +52,7 @@ public class LTSAutoConfiguration {
                     if (jobRunner != null) {
                         JOB_RUNNER_MAP.put(job.getName(), jobRunner);
                     }
+                    LOGGER.info("------[spring boot lts] JOB_RUNNER_MAP: {}------", JOB_RUNNER_MAP);
                 } catch (ClassNotFoundException e) {
                     LOGGER.error("------[spring boot lts] auto config error: {}------", e);
                 }
